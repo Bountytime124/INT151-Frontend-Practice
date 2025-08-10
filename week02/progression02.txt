@@ -1,0 +1,12 @@
+#shallow code
+function shallow จะเก็บ parameter ที่เป็น object1,object2
+โดยที่เรากำหนดค่า keys1 ให้เก็บ references อ้างอิง ของ book1
+และกำหนดค่า keys2 ให้เก็บ references อ้างอิง ของ book2
+โดยที่เราเปรียบเทียบค่าว่า ตัว keys และ datatypes มันเหมือนกันและเท่ากัน มั้ย
+ถ้าไม่เท่ากัน ให้ค่าเป็น false
+แล้วเรา ก็เช็คค่า ลูป key และ values 
+และกำหนด ค่าcondition ว่า key and values ของ book1 มันเท่ากับ key and values ของ book2 มั้ย
+ถ้าไม่เท่ากัน false
+แต่ถ้าเท่ากัน ออกจากลูปและ return true
+
+
