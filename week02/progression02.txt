@@ -8,5 +8,29 @@ function shallow จะเก็บ parameter ที่เป็น object1,obje
 และกำหนด ค่าcondition ว่า key and values ของ book1 มันเท่ากับ key and values ของ book2 มั้ย
 ถ้าไม่เท่ากัน false
 แต่ถ้าเท่ากัน ออกจากลูปและ return true
-
-
+#selfpractice02 code
+การ ADD ARAAY AND DELETING ARRAYS มีอยู่หลายรูปแบบ
+unshift() = เพิ่มสมาชิกตัวข้างหน้าให้ Arrays
+splice() = คือการเพิ่มหรือลบตำแหน่งหรือเอาขอมามูลมาแทนที่
+push() = การเพิ่มสมาชิกตัวท้ายสุดให้arrays
+OOP Inheritance
+คือการสืบทอด object นึงไปอีก object นึงเช่น
+class Chain {
+    constructor (chain,kin){
+        this.chain = chain
+        this.kin = kin
+    }
+    getinfo() {
+        return this.chain + " " + this.kin
+    }
+}
+class Getter extends Chain {  //อย่างนี้คือการอ้างถึง class Chain
+    constructor(chain,kin,getter){
+    super(chain,kin)
+    this.getter = getter
+    }
+    summary(){
+        this.getter + this.chain + this.kin
+    }
+}
+let k = new Getter("getter","chain","kin")
