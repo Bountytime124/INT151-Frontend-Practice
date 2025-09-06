@@ -1,1 +1,51 @@
-gi
+1.Arrays Destructuring คือ สามารถที่จะแตก values ออกมาได้ โดย ไม่จำเป็นที่จะต้องใช้ loop ในการดึงแต่ละตัวออกมา
+โดยหลักๆจะมีอยู่ 2 ตัว
+spread คือ กระจายแต่ละตัวอักษรออกมา เช่น [...'moomaipai] จะเป็น ['m','o','o','m','a','i','p','a','i']
+rest คือ การเรียกดึงตั้งแต่ค่าที่เราสใจถึงตัวสุดท้ายที่เรากำหนดขอบเขต
+2.#shallow code
+function shallow จะเก็บ parameter ที่เป็น object1,object2
+โดยที่เรากำหนดค่า keys1 ให้เก็บ references อ้างอิง ของ book1
+และกำหนดค่า keys2 ให้เก็บ references อ้างอิง ของ book2
+โดยที่เราเปรียบเทียบค่าว่า ตัว keys และ datatypes มันเหมือนกันและเท่ากัน มั้ย
+ถ้าไม่เท่ากัน ให้ค่าเป็น false
+แล้วเรา ก็เช็คค่า ลูป key และ values 
+และกำหนด ค่าcondition ว่า key and values ของ book1 มันเท่ากับ key and values ของ book2 มั้ย
+ถ้าไม่เท่ากัน false
+แต่ถ้าเท่ากัน ออกจากลูปและ return true
+#selfpractice02 code
+การ ADD ARAAY AND DELETING ARRAYS มีอยู่หลายรูปแบบ
+unshift() = เพิ่มสมาชิกตัวข้างหน้าให้ Arrays
+splice() = คือการเพิ่มหรือลบตำแหน่งหรือเอาขอมามูลมาแทนที่
+push() = การเพิ่มสมาชิกตัวท้ายสุดให้arrays
+OOP Inheritance
+คือการสืบทอด object นึงไปอีก object นึงเช่น
+class Chain {
+    constructor (chain,kin){
+        this.chain = chain
+        this.kin = kin
+    }
+    getinfo() {
+        return this.chain + " " + this.kin
+    }
+}
+class Getter extends Chain {  //อย่างนี้คือการอ้างถึง class Chain
+    constructor(chain,kin,getter){
+    super(chain,kin)
+    this.getter = getter
+    }
+    summary(){
+        this.getter + this.chain + this.kin
+    }
+}
+let k = new Getter("getter","chain","kin")
+3.//getFreqWord
+้ได้เรียนรู้การเก็บค่าตัวแปรใน arrays method ต่างๆ และได้ประยุกต์ใช้มากขึ้น
+//selfpractice03
+ได้ฝึกBasic พวก array object oop loop ต่างๆว่ามันใช้งานยังไง ฝึกความคล่องแคล่วให้ตัวเองมีพื้นฐานให้แน่นขึ้น
+4.การใช้ high order function คือการทำให้เขียน function สั้นลงและง่ายขึ้นโดยหลักๆที่ผมใช้จะมี
+filter() คือการเอาข้อมูลเฉพาะบางส่วนที่ตรงเงื่อนไขทั้งหมด
+reduce() ที่ใช้สำหรับ ลด (reduce) อาร์เรย์ให้เหลือค่าเดียว โดยใช้ฟังก์ชันสะสม (accumulator function)
+ ที่ทำงานกับแต่ละสมาชิกของอาร์เรย์จากซ้ายไปขวา
+ map() ใช้สำหรับการดึงข้อมูลมาทั้งหมดแล้วมาเชคเงื่อนไขว่าถูกหรือไม่ถูก
+ 
+5.ได้เรียนรู้วิธีใช้การ เชื่อม scrript นึง ไป อีก script นึงโดยการใช้พวก exportต่างๆ 
